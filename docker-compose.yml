@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  sourcefuse.e-commerce.api:
+    image: ${DOCKER_REGISTRY-}sourcefuseecommerceapi
+    build:
+      context: .
+      dockerfile: SourceFuse.E-commerce.API/Dockerfile
